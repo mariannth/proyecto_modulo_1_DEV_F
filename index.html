@@ -43,60 +43,82 @@
         <div class="container mt-5">
             <h1 class="text-center">Explora las nuevas recetas</h1>
         </div>
-        <!-- Contenedor de las tarjetas de recetas -->
-        <div class="container recipe-cards">
+        <section>
+            <!-- Contenedor de las tarjetas de recetas -->
+            <div class="container recipe-cards">
 
-            <!-- Primera tarjeta de receta -->
-            <div class="card recipe-card">
-                <img src="https://via.placeholder.com/400x200?text=Receta+1" class="card-img-top" alt="Receta 1">
-                <div class="card-body">
-                    <h5 class="card-title">Receta 1: Pollo al horno</h5>
-                    <p class="card-text">Disfruta de una deliciosa receta de pollo al horno con un toque de especias.
-                    </p>
-                    <a href="https://www.example.com/receta1" class="btn btn-primary" target="_blank">Ver receta</a>
+                <!-- Primera tarjeta de receta -->
+                <div class="card recipe-card">
+                    <img src="https://via.placeholder.com/400x200?text=Receta+1" class="card-img-top" alt="Receta 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Receta 1: Pollo al horno</h5>
+                        <p class="card-text">Disfruta de una deliciosa receta de pollo al horno con un toque de
+                            especias.
+                        </p>
+                        <a href="https://www.example.com/receta1" class="btn btn-primary" target="_blank">Ver receta</a>
+                    </div>
+                </div>
+
+                <!-- Segunda tarjeta de receta -->
+                <div class="card recipe-card">
+                    <img src="https://via.placeholder.com/400x200?text=Receta+2" class="card-img-top" alt="Receta 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Receta 2: Pescado a la parrilla</h5>
+                        <p class="card-text">Un delicioso filete de pescado a la parrilla con limón y hierbas.</p>
+                        <a href="https://www.example.com/receta2" class="btn btn-primary" target="_blank">Ver receta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <!-- Galería de imágenes tipo tabla -->
+            <div class="container gallery" id="gallery">
+                <a href="carnes.html"><img src="./img/img1.jpeg" alt="Imagen 1"></a>
+                <a href="aves.html"><img src="./img/img3.jpeg" alt="Imagen 2"></a>
+                <a href="pescados.html"><img src="./img/img4.jpeg" alt="Imagen 3"></a>
+                <a href="moles.html"><img src="./img/img5.webp" alt="Imagen 4"></a>
+                <a href="postres.html"><img src="./img/img6.jpeg" alt="Imagen 5"></a>
+                <a href="sopas.html"><img src="./img/img8.webp" alt="Imagen 6"></a>
+                <a href="bebidas.html"><img src="./img/img7.jpg" alt="Imagen 7"></a>
+                <a href="#newsletter"><img src="./img/img2.jpg" alt="Imagen 8"></a>
+                <!-- Más imágenes si es necesario -->
+            </div>
+
+        </section>
+        <section>
+            <!-- Newsletter -->
+            <div class="container mt-5" id="newsletter">
+                <h2 class="text-center">Suscríbete a Nuestro Newsletter</h2>
+                <form id="newsletterForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                </form>
+            </div>
+
+            <!-- Modal de éxito -->
+            <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="successModalLabel">¡Registro Exitoso!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ¡Felicidades, te has registrado con éxito! Ahora recibirás nuestras recetas primero.
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Segunda tarjeta de receta -->
-            <div class="card recipe-card">
-                <img src="https://via.placeholder.com/400x200?text=Receta+2" class="card-img-top" alt="Receta 2">
-                <div class="card-body">
-                    <h5 class="card-title">Receta 2: Pescado a la parrilla</h5>
-                    <p class="card-text">Un delicioso filete de pescado a la parrilla con limón y hierbas.</p>
-                    <a href="https://www.example.com/receta2" class="btn btn-primary" target="_blank">Ver receta</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Galería de imágenes tipo tabla -->
-        <div class="container gallery" id="gallery">
-            <a href="carnes.html"><img src="./img/img1.jpeg" alt="Imagen 1"></a>
-            <a href="aves.html"><img src="./img/img3.jpeg" alt="Imagen 2"></a>
-            <a href="pescados.html"><img src="./img/img4.jpeg" alt="Imagen 3"></a>
-            <a href="moles.html"><img src="./img/img5.webp" alt="Imagen 4"></a>
-            <a href="postres.html"><img src="./img/img6.jpeg" alt="Imagen 5"></a>
-            <a href="sopas.html"><img src="./img/img8.webp" alt="Imagen 6"></a>
-            <a href="bebidas.html"><img src="./img/img7.jpg" alt="Imagen 7"></a>
-            <a href="#newsletter"><img src="./img/img2.jpg" alt="Imagen 8"></a>
-            <!-- Más imágenes si es necesario -->
-        </div>
-
-
-        <!-- Newsletter -->
-        <div class="container mt-5" id="newsletter">
-            <h2 class="text-center">Suscríbete a Nuestro Newsletter</h2>
-            <form id="newsletterForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <button type="submit" class="btn btn-primary">Suscribirse</button>
-            </form>
-        </div>
+        </section>
         <br><br>
     </main>
     <!-- Footer -->

@@ -37,6 +37,38 @@
 </header>
 <main>
 
+    <!-- Newsletter -->
+    <div class="container mt-5" id="newsletter">
+        <h2 class="text-center">Suscríbete a Nuestro Newsletter</h2>
+        <form id="newsletterForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Suscribirse</button>
+        </form>
+    </div>
+
+    <!-- Modal de éxito -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="successModalLabel">¡Registro Exitoso!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¡Felicidades, te has registrado con éxito! Ahora recibirás nuestras recetas primero.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <br><br>
 </main>
 <!-- Footer -->
