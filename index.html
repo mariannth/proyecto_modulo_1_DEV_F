@@ -4,6 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadata para SEO -->
+    <meta name="description" content="Recetas de cocina, Realizado por Mariana">
+    <meta name="keywords"
+        content="Mariana Torres, desarrolladora, FullStack, Java, HTML, CSS, JavaScript, herramientas de desarrollo, herramientas de depurado de datos, proyecto web">
+    <meta name="author" content="Mariana Torres">
+
+    <!-- Open Graph nos sirve para optimización en redes sociales como Facebook, Instagram y WhatsApp -->
+    <meta property="og:title" content="Proyecto de Mariana Torres">
+    <meta property="og:description" content="Proyeto de Mariana Torres, desarrolladora FullStack Java.">
+    <meta property="og:image"
+        content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfUx7SYStZZmmzrZCKvqYCVHkcra_pTtP-uA&s"
+        width="200" height="200">
+    <!-- Se puede agregar una imagen desde el repo, pero debe estar en el github todo el tiempo
+    <meta property="og:url" content="https://github.com/mariannth/proyecto_modulo_1_DEV_F">
+    <meta property="og:type" content="profile"> -->
+
+    <!-- Twitter Cards para visualizar el contenido compartido en X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Proyectoo de Mariana Torres - desarrolladora FullStack Java">
+    <meta name="twitter:description"
+        content="Descubre el proyecto de Mariana Torres, para DevF.">
+    <meta name="twitter:image" content="https://1000marcas.net/wp-content/uploads/2021/11/Gryffindor-Logo.png"
+        width="200" height="200">
+
     <title>Recetas Chic</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,11 +53,11 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="carnes.html">Carnes</a></li>
                         <li class="nav-item"><a class="nav-link" href="aves.html">Aves</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pescados.html">Pescados</a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="pescados.html">Pescados</a></li>
                         <li class="nav-item"><a class="nav-link" href="postres.html">Postres</a></li>
                         <li class="nav-item"><a class="nav-link" href="sopas.html">Sopas</a></li>
                         <li class="nav-item"><a class="nav-link" href="moles.html">Moles</a></li>
-                        <li class="nav-item"><a class="nav-link" href="bebidas.html">Moles</a></li>
+                        <li class="nav-item"><a class="nav-link" href="bebidas.html">Moles</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
                     </ul>
                 </div>
@@ -49,23 +74,23 @@
 
                 <!-- Primera tarjeta de receta -->
                 <div class="card recipe-card">
-                    <img src="https://via.placeholder.com/400x200?text=Receta+1" class="card-img-top" alt="Receta 1">
+                    <img src="./img/medallon.webp" class="card-img-top" alt="Receta 1">
                     <div class="card-body">
-                        <h5 class="card-title">Receta 1: Pollo al horno</h5>
-                        <p class="card-text">Disfruta de una deliciosa receta de pollo al horno con un toque de
+                        <h5 class="card-title">Receta 1: Medallones a la pimienta</h5>
+                        <p class="card-text">Disfruta de una deliciosa receta de medallones de carne con un toque de
                             especias.
                         </p>
-                        <a href="https://www.example.com/receta1" class="btn btn-primary" target="_blank">Ver receta</a>
+                        <a href="carnes.html" class="btn btn-primary" target="_blank">Ver receta</a>
                     </div>
                 </div>
 
                 <!-- Segunda tarjeta de receta -->
                 <div class="card recipe-card">
-                    <img src="https://via.placeholder.com/400x200?text=Receta+2" class="card-img-top" alt="Receta 2">
+                    <img src="./img/pollo-chipotle.webp" class="card-img-top" alt="Receta 2">
                     <div class="card-body">
-                        <h5 class="card-title">Receta 2: Pescado a la parrilla</h5>
-                        <p class="card-text">Un delicioso filete de pescado a la parrilla con limón y hierbas.</p>
-                        <a href="https://www.example.com/receta2" class="btn btn-primary" target="_blank">Ver receta</a>
+                        <h5 class="card-title">Receta 2: Pollo al Chipotle</h5>
+                        <p class="card-text">Un delicioso pollo al Chipotle con una explosión de sabor.</p>
+                        <a href="aves.html" class="btn btn-primary" target="_blank">Ver receta</a>
                     </div>
                 </div>
             </div>
@@ -75,11 +100,11 @@
             <div class="container gallery" id="gallery">
                 <a href="carnes.html"><img src="./img/img1.jpeg" alt="Imagen 1"></a>
                 <a href="aves.html"><img src="./img/img3.jpeg" alt="Imagen 2"></a>
-                <a href="pescados.html"><img src="./img/img4.jpeg" alt="Imagen 3"></a>
-                <a href="moles.html"><img src="./img/img5.webp" alt="Imagen 4"></a>
-                <a href="postres.html"><img src="./img/img6.jpeg" alt="Imagen 5"></a>
-                <a href="sopas.html"><img src="./img/img8.webp" alt="Imagen 6"></a>
-                <a href="bebidas.html"><img src="./img/img7.jpg" alt="Imagen 7"></a>
+                <a href="#"><img src="./img/img4.jpeg" alt="Imagen 3"></a>
+                <a href="#"><img src="./img/img5.webp" alt="Imagen 4"></a>
+                <a href="#"><img src="./img/img6.jpeg" alt="Imagen 5"></a>
+                <a href="#"><img src="./img/img8.webp" alt="Imagen 6"></a>
+                <a href="#"><img src="./img/img7.jpg" alt="Imagen 7"></a>
                 <a href="#newsletter"><img src="./img/img2.jpg" alt="Imagen 8"></a>
                 <!-- Más imágenes si es necesario -->
             </div>
@@ -129,10 +154,9 @@
                 <div class="col-md-4 mb-3">
                     <h5>Enlaces Rápidos</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Recetas de Carnes</a></li>
-                        <li><a href="#" class="text-white">Recetas de Aves</a></li>
-                        <li><a href="#" class="text-white">Recetas de Postres</a></li>
-                        <li><a href="#" class="text-white">Suscríbete</a></li>
+                        <li><a href="carnes.html" class="text-white">Recetas de Carnes</a></li>
+                        <li><a href="aves.html" class="text-white">Recetas de Aves</a></li>
+                        <li><a href="#newsletter" class="text-white">Suscríbete</a></li>
                     </ul>
                 </div>
                 <!-- Sección de redes sociales -->
@@ -152,7 +176,7 @@
             </div>
             <div class="row mt-4">
                 <div class="col text-center">
-                    <p class="mb-0">&copy; 2024 Recetas Chic. Todos los derechos reservados.</p>
+                    <p class="mb-0">&copy; 2024 Recetas Chic. Todos los derechos reservados. Por Mariana Torres</p>
                 </div>
             </div>
         </div>
